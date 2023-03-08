@@ -2,49 +2,53 @@
 
 >Can use --help to see all options when using a docker command
 
+### Viewing Running Containers
+
 docker ps = shows all currently running containers
+
 docker ps -a = shows all containers (incl stopped)
 
-Stopping & Restarting Containers
-docker run - creates a new container
-docker start - Starts a stopped container
+### Stopping & Restarting Containers
+
+docker run - creates a new container (attached mode is default)
+
+docker start - Starts a stopped container (detached mode is default)
+
 docker stop - Stops a container
 
-Understanding Attached/Detached Containers
-docker start - detached mode is default
-docker run - attached mode is default
-
-docker logs - can see the previous console outputs
-
-Interacting with Container
+### Interacting with Container
 
 docker run -i (interactive mode)-t (allocates a pseudo TTY)
+
 docker start -i -a 
 
-Deleting Images and Containers
+### Deleting Images and Containers
+
 docker rm - removes containers (stopped only)
-docker stop - stops container
 
 docker images - lists images
+
 docker rmi - removes images
 
-images belonging to a container cannot be removed
+Images belonging to a container cannot be removed
 
 docker prune - will remove all unused images
 
 docker run --rm Automatically removes the container when it exits
 
-Inspecting Images
+### Inspecting Images/Containers
+
+docker logs - can see the previous console outputs
 
 docker image inspect - gives lots of information about the image
 
-Copying files into and from a container
+### Copying files into and from a container
 
 docker cp  (local_source) (container):(dest_path) 
 or 
 docker cp  (container):(source) (local_dest_path) 
 
-Naming Images and Containers
+### Naming Images and Containers
 
 docker run --name  - gives custom name to the container
 
