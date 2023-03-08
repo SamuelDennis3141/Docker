@@ -144,4 +144,4 @@ none: All networking is disabled.
 
 Third-party plugins: You can install third-party plugins which then may add all kinds of behaviors and functionalities
 
-As mentioned, the "bridge" driver makes most sense in the vast majority of scenarios.
+The "bridge" driver makes most sense in the vast majority of scenarios.
