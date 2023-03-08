@@ -1,5 +1,6 @@
-Managing Images and Containers 
-Can use --help to see all options
+# Managing Images and Containers 
+
+>Can use --help to see all options when using a docker command
 
 docker ps = shows all currently running containers
 docker ps -a = shows all containers (incl stopped)
